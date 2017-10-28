@@ -5,7 +5,7 @@
 //  Created by Sarah Pisini on 10/27/17.
 //  Copyright © 2017 Sarah Pisini. All rights reserved.
 //
-// checking on Push - YJ
+// checking on Push 2- YJ 
 import UIKit
 
 class SecondViewController: UIViewController {
