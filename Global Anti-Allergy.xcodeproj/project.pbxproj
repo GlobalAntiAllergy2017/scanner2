@@ -13,6 +13,7 @@
 		23EB70661FA442420036B925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB70641FA442420036B925 /* Main.storyboard */; };
 		23EB70681FA442430036B925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EB70671FA442430036B925 /* Assets.xcassets */; };
 		23EB706B1FA442430036B925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EB70691FA442430036B925 /* LaunchScreen.storyboard */; };
+		B070D93A1FB430230010C97D /* ScanResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B070D9391FB430230010C97D /* ScanResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		23EB70671FA442430036B925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23EB706A1FA442430036B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23EB706C1FA442440036B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B070D9381FB42F8E0010C97D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B070D9391FB430230010C97D /* ScanResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			children = (
 				23EB705D1FA442410036B925 /* Global Anti-Allergy */,
 				23EB705C1FA442410036B925 /* Products */,
+				B070D9371FB42F8E0010C97D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +63,21 @@
 				23EB705E1FA442410036B925 /* AppDelegate.swift */,
 				23EB70601FA442410036B925 /* FirstViewController.swift */,
 				23EB70621FA442410036B925 /* SecondViewController.swift */,
+				B070D9391FB430230010C97D /* ScanResultVC.swift */,
 				23EB70641FA442420036B925 /* Main.storyboard */,
 				23EB70671FA442430036B925 /* Assets.xcassets */,
 				23EB70691FA442430036B925 /* LaunchScreen.storyboard */,
 				23EB706C1FA442440036B925 /* Info.plist */,
 			);
 			path = "Global Anti-Allergy";
+			sourceTree = "<group>";
+		};
+		B070D9371FB42F8E0010C97D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B070D9381FB42F8E0010C97D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			files = (
 				23EB70631FA442410036B925 /* SecondViewController.swift in Sources */,
 				23EB705F1FA442410036B925 /* AppDelegate.swift in Sources */,
+				B070D93A1FB430230010C97D /* ScanResultVC.swift in Sources */,
 				23EB70611FA442410036B925 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38HLV9J49L;
 				INFOPLIST_FILE = "Global Anti-Allergy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uiowa.Global-Anti-Allergy";
@@ -293,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38HLV9J49L;
 				INFOPLIST_FILE = "Global Anti-Allergy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uiowa.Global-Anti-Allergy";
