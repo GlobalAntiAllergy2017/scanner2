@@ -41,10 +41,10 @@ class SecondViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         if metadataObjects.count != 0{
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject{
                 if case object.type = AVMetadataObject.ObjectType.ean13 {
-                    self.performSegue(withIdentifier: "theScanDetial", sender: self)
+                    //self.performSegue(withIdentifier: "theScanDetial", sender: self)
                     mySession.stopRunning()
-                    //let popup = UIAlertController(title: "my message", message: object.stringValue, preferredStyle: UIAlertControllerStyle.alert)
-                    //self.present(popup, animated: true, completion: nil)
+                    let popup = UIAlertController(title: "my message", message: object.stringValue, preferredStyle: UIAlertControllerStyle.alert)
+                    self.present(popup, animated: true, completion: nil)
                 }
             }
         }
